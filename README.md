@@ -14,7 +14,7 @@ import java.sql.*;
      --
      Class.forName("org.postgresql.Driver");
 
-# 3) Establish the Conncetion to the DB
+# 3) Establish the connection to the DB
 --
 String dbUrl = "jdbc:postgresql://localhost:5432/postgres";
 Connection con = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
