@@ -7,11 +7,11 @@ public class App {
 		
 		
 		UserDAOImpl userDao = new UserDAOImpl();
-		User user = userDao.getUsernameById(1);
+		User user = userDao.getUsernameById(3);
 		
 		System.out.println(user.getUsername());
 		
-		userDao.addUser("userfromjava");
+		userDao.addUser("userfromjava2");
 	}
 
 }

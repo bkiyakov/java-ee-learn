@@ -54,6 +54,9 @@ public class UserDAOImpl implements UserDAO{
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setString(1, username);
 			pst.executeUpdate();
+			
+			pst.close();
+			con.close();
 		}
 		catch (Exception e) {
 			System.out.println("Exception addUser: " + e.getMessage());
