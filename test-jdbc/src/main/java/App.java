@@ -12,7 +12,6 @@ public class App {
 		System.out.println(user.getUsername());
 		
 		userDao.addUser("userfromjava");
-		
 	}
 
 }
